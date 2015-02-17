@@ -1,0 +1,7 @@
+<h1>Enter your email address</h1>
+<p>and you'll get an invitation to this app.</p>
+
+<%= form_tag send_send_mail_path do %>
+  <p>Address: <%= email_field_tag :address %></p>
+  <%= submit_tag %>
+<% end %>
