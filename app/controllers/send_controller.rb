@@ -3,6 +3,6 @@ class SendController < ApplicationController
   end
 
   def send_mail
-    SendMailer.invitation(params[:address]).deliver_now
+    SendMailer.invitation(params[:address]).deliver_later
   end
 end
